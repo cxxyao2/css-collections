@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @property --main-color {
+        syntax: '<color>';
+        initial-value: #ff6347;
+        inherits: false;
+      }
+
+      :root {
+        --main-color: #3498db;
+        background-color: var(--main-color);
+      }
+
+      .button {
+        background-color: var(--main-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Property allows us to check datatype, set initial value and inherit it.
+    </div>
+    <button type="button" class="button">Set value</button>
+  </body>
+</html>
